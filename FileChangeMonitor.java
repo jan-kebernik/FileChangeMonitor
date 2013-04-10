@@ -38,7 +38,7 @@ import java.util.concurrent.locks.ReentrantReadWriteLock;
  * 
  * @author Jan Kebernik
  */
-public class FileChangeMonitor {
+public class FileChangeMonitor{
 
 	private static final WatchService watcher = newWatchService();
 	private static final ExecutorService listenerExec = Executors.newSingleThreadExecutor();
