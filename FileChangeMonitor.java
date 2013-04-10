@@ -87,7 +87,7 @@ public class FileChangeMonitor{
 				finally {
 					lock.readLock().unlock();
 				}
-			}
+			} 
 			else if (Files.isRegularFile(file)) {
 				final Path dirPath = file.getParent().toRealPath();
 				final Path filePath = file.getFileName();
